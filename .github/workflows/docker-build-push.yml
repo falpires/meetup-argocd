@@ -22,7 +22,7 @@ jobs:
             iterisfpi/meetup-argocd
           # generate Docker tags based on the following events/attributes
           tags: |
-            type=sha
+            type=semver,pattern={{major}}.{{minor}}
       
       - name: Login to DockerHub
         if: github.event_name != 'pull_request'
