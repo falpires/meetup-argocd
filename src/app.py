@@ -3,4 +3,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return "Essa é a versão 1.0"
+    return "Essa é a versão 2.0"
