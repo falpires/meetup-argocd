@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: meetup-app
-        image: iterisfpi/meetup-argocd:2.0 # Imagem do container
+        image: iterisfpi/meetup-argocd:2.1 # Imagem do container
         ports:
         - containerPort: 5000 # Porta do container
