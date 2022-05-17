@@ -17,3 +17,8 @@ spec:
         image: iterisfpi/meetup-argocd:2.1 # Imagem do container
         ports:
         - containerPort: 5000 # Porta do container
+      tolerations:
+      - key: "client"
+        operator: "Equal"
+        value: "cmpc"
+        effect: "NoSchedule"
